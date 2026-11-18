@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FF212121"
+            android:layout_marginBottom="14dp" />
+
+        <!-- 工作模式卡片 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="工作模式" android:textSize="15sp" android:textStyle="bold" android:textColor="#FF212121" />
+            <TextView android:id="@+id/modeValue" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="未激活" android:textSize="14sp" android:textColor="#FF2E7D32" android:layout_marginTop="6dp" />
+            <Button android:id="@+id/btnActivate2" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="激活 / 重新激活" android:layout_marginTop="10dp" android:backgroundTint="#FF2E7D32" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnUsageAccess" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="授予「使用情况访问权限」（退出冻结需要）" android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- 自动冻结卡片 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="自动冻结" android:textSize="15sp" android:textStyle="bold" android:textColor="#FF212121"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp">
+
+            <TextView android:id="@+id/chkScreenOff" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="☐ 锁屏后自动冻结（已关闭）" android:textSize="14sp" android:textColor="#FF9E9E9E"
+                android:paddingVertical="10dp" />
+            <TextView android:id="@+id/rowScreenOffDelay" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="锁屏后延迟：0 秒" android:textSize="13sp" android:textColor="#FF616161"
+                android:paddingStart="12dp" android:paddingBottom="6dp" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#FFF0F0F0" />
+
+            <TextView android:id="@+id/chkExit" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="☐ 退出应用后冻结（已关闭）" android:textSize="14sp" android:textColor="#FF9E9E9E"
+                android:paddingVertical="10dp" />
+            <TextView android:id="@+id/rowExitDelay" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="退出应用后延迟：10 秒" android:textSize="13sp" android:textColor="#FF616161"
+                android:paddingStart="12dp" android:paddingBottom="6dp" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#FFF0F0F0" />
+
+            <TextView android:id="@+id/chkTimer" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="☐ 定时冻结（已关闭）" android:textSize="14sp" android:textColor="#FF9E9E9E"
+                android:paddingVertical="10dp" />
+            <TextView android:id="@+id/rowTimerInterval" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="定时冻结间隔：每 30 分钟" android:textSize="13sp" android:textColor="#FF616161"
+                android:paddingStart="12dp" android:paddingBottom="6dp" />
+        </LinearLayout>
+
+        <Button android:id="@+id/btnBattery" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="忽略电池优化（锁屏冻结必须允许）" android:layout_marginTop="12dp" android:backgroundTint="#FF5C6BC0" android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提示：请先到「应用」页勾选要冻结的应用，再开启上面的开关；并点上方按钮忽略电池优化，否则锁屏后服务可能被系统冻结导致不生效。"
+            android:textSize="12sp"
+            android:textColor="#FF9E9E9E"
+            android:layout_marginTop="12dp" />
+
+        <!-- 诊断卡片 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="自动冻结诊断" android:textSize="15sp" android:textStyle="bold" android:textColor="#FF212121"
+            android:layout_marginTop="18dp" android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp">
+
+            <TextView android:id="@+id/diagLog" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="暂无记录" android:textSize="12sp" android:textColor="#FF616161"
+                android:lineSpacingExtra="3dp" android:minHeight="60dp" />
+
+            <Button android:id="@+id/btnTestFreeze" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="测试自动冻结（立即执行一次）" android:layout_marginTop="10dp" android:backgroundTint="#FF2E7D32" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnCheckUnfrozen" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="检查未冻结项（找出没冻上的应用）" android:layout_marginTop="6dp" android:backgroundTint="#FFEF6C00" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnClearLog" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="清空日志" android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

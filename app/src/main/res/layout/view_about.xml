@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:contentDescription="霜雪"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="霜雪"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FF212121"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.14"
+            android:textSize="13sp"
+            android:textColor="#FF9E9E9E"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n一款彻底、免 root 持久有效的应用冻结工具\n\n"
+            android:textSize="14sp"
+            android:textColor="#FF424242"
+            android:lineSpacingExtra="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="功能特点"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FF212121"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 彻底冻结：先强停进程再隐藏组件\n• 三种模式：设备所有者（永久）/ Root / Shizuku\n• 标准桌面快捷方式，任何桌面都能固定\n• 锁屏冻结 / 退出应用冻结 / 定时冻结\n• 针对 Android 15 / 努比亚适配"
+            android:textSize="14sp"
+            android:textColor="#FF616161"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n注意"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FF212121"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 勿冻结电话、短信、桌面、系统设置等核心应用\n• 卸载本 App 前请先移除设备管理员授权\n• 冻结系统应用可能导致功能异常，请谨慎"
+            android:textSize="14sp"
+            android:textColor="#FF616161"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginTop="6dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">霜雪</string>
+    <string name="device_admin_label">霜雪</string>
+    <string name="device_admin_desc">用于冻结和隐藏应用，一次激活永久有效，重启不失活。</string>
+    <string name="search_hint">搜索应用名称或包名…</string>
+    <string name="tab_user">用户应用</string>
+    <string name="tab_system">系统应用</string>
+    <string name="tab_frozen">已冻结</string>
+    <string name="mode_device_owner">设备所有者模式</string>
+    <string name="mode_root">Root 模式</string>
+    <string name="mode_shizuku">Shizuku 模式</string>
+    <string name="status_active">已激活</string>
+    <string name="status_inactive">未激活</string>
+    <string name="freeze">冻结</string>
+    <string name="unfreeze">解冻</string>
+    <string name="create_shortcut">创建快捷方式</string>
+</resources>

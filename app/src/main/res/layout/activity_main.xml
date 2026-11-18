@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF">
+
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 底部导航 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:divider="#FFEEEEEE"
+        android:showDividers="middle">
+
+        <LinearLayout android:id="@+id/tabHome" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="❄" android:textSize="24sp" android:textColor="#FF5C6BC0"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" android:textSize="12sp" android:textColor="#FF212121"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabApps" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="▦" android:textSize="24sp" android:textColor="#FF26A69A"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用" android:textSize="12sp" android:textColor="#FF212121"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabSettings" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚙" android:textSize="24sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" android:textSize="12sp" android:textColor="#FF212121"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabAbout" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ⓘ" android:textSize="24sp" android:textColor="#FF9E9E9E"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于" android:textSize="12sp" android:textColor="#FF212121"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

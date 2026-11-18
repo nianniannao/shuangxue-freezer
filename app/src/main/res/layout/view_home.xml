@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="霜雪" />
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/btnFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▦"
+                android:textSize="22sp"
+                android:textColor="#FF616161"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/btnMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⋮"
+                android:textSize="24sp"
+                android:textColor="#FF616161"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- 状态条 -->
+        <TextView
+            android:id="@+id/homeStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="○ 未激活，点右下角按钮激活"
+            android:textSize="13sp"
+            android:textColor="#FF9E9E9E"
+            android:paddingStart="18dp"
+            android:paddingBottom="6dp" />
+
+        <!-- 搜索框 -->
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_hint"
+            android:textSize="14sp"
+            android:background="#FFF5F5F5"
+            android:padding="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:singleLine="true" />
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:numColumns="4"
+            android:verticalSpacing="14dp"
+            android:horizontalSpacing="4dp"
+            android:padding="12dp"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay" />
+    </LinearLayout>
+
+    <!-- 悬浮按钮：粉色霜雪图标 -->
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="fitCenter"
+        android:contentDescription="一键冻结"
+        android:elevation="6dp" />
+
+</FrameLayout>
